@@ -1,4 +1,4 @@
-package fundamentals;
+package fundamentals.EX01AddDouble;
 
     /* Declare three double-type variables named num1, num2, and result. Assign the value 5.5 to num1 and the value 2.2 to num2.
      Then, perform the sum of both and store the result in the result variable. Finally, print the value of result to the console.
