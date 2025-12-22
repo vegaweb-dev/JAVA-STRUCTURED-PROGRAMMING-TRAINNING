@@ -1,5 +1,6 @@
 package hashmaps.chall_03_server_log_analysis;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,6 +15,9 @@ public class ErrorCounter {
 
     Map<String, Integer> countErrorLogs(String[] rawLogOfErrors) {
         Map<String, Integer> mapOfErrors = new HashMap<String, Integer>();
+        if (rawLogOfErrors == null || rawLogOfErrors.length == 0) {
+            return Collections.emptyMap();
+        }
         for (String error : rawLogOfErrors) {
             mapOfErrors.put(error, mapOfErrors.getOrDefault(error, 0) + 1);
         }
